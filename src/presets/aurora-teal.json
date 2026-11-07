@@ -1,0 +1,76 @@
+{
+  "_name": "Aurora Teal",
+  "backgroundStyle": "Radial Gradient",
+  "backgroundColor1": "#001410",
+  "backgroundColor2": "#000000",
+  "backgroundAngle": 135,
+  "flow": {
+    "speed": 2,
+    "curlIntensity": 2.5,
+    "windDirection": "Up",
+    "windStrength": 1
+  },
+  "interaction": {
+    "magneticsEnabled": false,
+    "radius": 0.4,
+    "force": 2,
+    "parallax": 0.03,
+    "invertMouse": false
+  },
+  "transform": {
+    "shape": "Plane",
+    "fitMode": "Maintain Aspect",
+    "morphHD": 0.7,
+    "displacement": 0.5,
+    "pullForce": 0.3
+  },
+  "ambientCloud": {
+    "enabled": true,
+    "particleCount": 1500,
+    "size": 60,
+    "opacity": 0.15,
+    "colorSource": "Soft Emerald",
+    "direction": "Up",
+    "speed": 0.5,
+    "bokehHardness": 0
+  },
+  "lighting": {
+    "ambient": 0.4,
+    "intensity": 1.5,
+    "dirX": 0,
+    "dirY": 1,
+    "dirZ": 1,
+    "depthShadow": 1.2
+  },
+  "rendering": {
+    "particleCountPreset": "65K (256x256)",
+    "particleSize": 4,
+    "brightness": 1.1,
+    "opacity": 0.85,
+    "respawnRate": 0.002,
+    "blending": 1
+  },
+  "post": {
+    "bloomEnabled": false,
+    "bloomIntensity": 0.4,
+    "bloomThreshold": 0.35,
+    "bloomRadius": 0.4,
+    "enableDof": false,
+    "dofAutoFocus": true,
+    "dofFocusBias": 1.5,
+    "enableChromatic": false,
+    "enableHueSat": false
+  },
+  "camera": {
+    "fov": 70,
+    "posX": 0,
+    "posY": 0,
+    "posZ": 3,
+    "targetX": 0,
+    "targetY": 0,
+    "targetZ": 0,
+    "enableOrbit": true,
+    "autoDrift": true,
+    "driftSpeed": 0.4
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "backgroundStyle": "Ambient Mirror",
+  "background": "#000000",
+  "backgroundColor1": "#000000",
+  "backgroundColor2": "#000000",
+  "backgroundAngle": 135,
+  "flow": {
+    "speed": 1,
+    "curlIntensity": 1.2,
+    "windDirection": "Up",
+    "windStrength": 1
+  },
+  "interaction": {
+    "radius": 0.01,
+    "force": 0,
+    "parallax": 0,
+    "invertMouse": false
+  },
+  "transform": {
+    "shape": "Torus",
+    "fitMode": "Stretch",
+    "morphHD": 0.69,
+    "displacement": 0.68,
+    "pullForce": 0.22,
+    "forceResetParticles": false
+  },
+  "ambientCloud": {
+    "enabled": true,
+    "particleCount": 1000,
+    "size": 50,
+    "opacity": 1,
+    "colorSource": "Image Palette",
+    "direction": "Orbit",
+    "speed": 0.2,
+    "bokehHardness": 0.19
+  },
+  "lighting": {
+    "ambient": 1.4,
+    "intensity": 0.8,
+    "dirX": 1,
+    "dirY": 1.5,
+    "dirZ": 0.5,
+    "depthShadow": 1.2
+  },
+  "rendering": {
+    "particleCountPreset": "65K (256x256)",
+    "particleSize": 7.8,
+    "blending": 1,
+    "opacity": 0.39,
+    "brightness": 2.3,
+    "respawnRate": 0
+  },
+  "post": {
+    "bloomEnabled": true,
+    "bloomIntensity": 1.8,
+    "bloomThreshold": 0.19,
+    "bloomRadius": 0.43,
+    "enableDof": false,
+    "dofFocus": 5,
+    "dofFocalLength": 50,
+    "dofBokehScale": 1.5,
+    "dofAutoFocus": true,
+    "dofFocusBias": 1.5,
+    "enableChromatic": false,
+    "chromaticOffset": 0.002,
+    "enableHueSat": true,
+    "saturation": 0.2
+  },
+  "camera": {
+    "fov": 75,
+    "posX": 0,
+    "posY": 0,
+    "posZ": 5,
+    "targetX": 0,
+    "targetY": 0,
+    "targetZ": 0,
+    "enableOrbit": true,
+    "autoDrift": false,
+    "driftSpeed": 0.5
+  },
+  "showFPS": false,
+  "showSpecs": false,
+  "_lastScrollPreset": "Warm Golden Embers"
+}

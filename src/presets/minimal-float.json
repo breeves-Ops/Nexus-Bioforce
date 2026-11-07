@@ -1,0 +1,70 @@
+{
+  "_name": "Minimal Float",
+  "backgroundStyle": "Solid Color",
+  "background": "#020203",
+  "backgroundAngle": 135,
+  "flow": {
+    "speed": 0.3,
+    "curlIntensity": 0.2,
+    "windDirection": "None",
+    "windStrength": 0
+  },
+  "interaction": {
+    "magneticsEnabled": false,
+    "radius": 0.2,
+    "force": 0.5,
+    "parallax": 0.005,
+    "invertMouse": false
+  },
+  "transform": {
+    "shape": "Plane",
+    "fitMode": "Maintain Aspect",
+    "morphHD": 0.95,
+    "displacement": 0.05,
+    "pullForce": 0.6
+  },
+  "ambientCloud": {
+    "enabled": false,
+    "particleCount": 500,
+    "size": 30,
+    "opacity": 0.1,
+    "colorSource": "Ivory Pearl",
+    "direction": "Orbit",
+    "speed": 0.1,
+    "bokehHardness": 0.15
+  },
+  "lighting": {
+    "ambient": 0.8,
+    "intensity": 1,
+    "dirX": 0.5,
+    "dirY": 1,
+    "dirZ": 0.5,
+    "depthShadow": 0.2
+  },
+  "rendering": {
+    "particleCountPreset": "65K (256x256)",
+    "particleSize": 3,
+    "brightness": 1,
+    "opacity": 0.95,
+    "respawnRate": 0,
+    "blending": 1
+  },
+  "post": {
+    "bloomEnabled": false,
+    "enableDof": false,
+    "enableChromatic": false,
+    "enableHueSat": false
+  },
+  "camera": {
+    "fov": 65,
+    "posX": 0,
+    "posY": 0,
+    "posZ": 2.5,
+    "targetX": 0,
+    "targetY": 0,
+    "targetZ": 0,
+    "enableOrbit": true,
+    "autoDrift": false,
+    "driftSpeed": 0.5
+  }
+}

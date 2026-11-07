@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Bioforce — Resource Revolution</title>
+    <meta name="description" content="Converting Houston's municipal solid waste into aerospace-grade turbostratic graphene, clean energy, and green hydrogen. Carbon negative. 93.3% EBITDA. &lt;9 month payback." />
+    <meta property="og:title" content="Nexus Bioforce — Resource Revolution" />
+    <meta property="og:description" content="The world's first Circular Sovereign Economy — converting Houston's municipal waste into graphene, green hydrogen, carbon-negative power, and the Digital Currency of Environmental Redemption." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nexusbioforce.com/" />
+    <meta property="og:image" content="https://nexusbioforce.com/brand/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:image" content="https://nexusbioforce.com/brand/og-image.jpg" />
+    <meta name="theme-color" content="#040c0a" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      Swiss + Modern Font System
+      HEADERS:  Space Grotesk (default), Inter, Archivo Black, Tenor Sans,
+                Syne, Bebas Neue, Barlow Condensed, Oswald, Rajdhani, Anton,
+                Montserrat, Outfit
+      BODY:     DM Sans (default), Inter, Questrial, Work Sans, Manrope,
+                Plus Jakarta Sans, Sora, Roboto, Outfit
+      MONO/GUI: DM Sans (GUI default), DM Mono, JetBrains Mono, Space Mono,
+                IBM Plex Mono, Share Tech Mono, Fira Code
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Barlow+Condensed:wght@400;600;700&family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Questrial&family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Share+Tech+Mono&family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=Tenor+Sans&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!--
+      SVG Glass Distortion Filters — included once at body start.
+      Used via filter:url(#glass-distortion) on ::after pseudo-elements of cards.
+      Safe: applied to individual elements (not fixed full-viewport layers).
+      The isolation:isolate + z-index:-1 card technique does NOT cause
+      the compositor darkening bug (only full-viewport fixed elements do).
+    -->
+    <svg id="nexus-glass-svg" width="0" height="0"
+         style="position:absolute;pointer-events:none;overflow:hidden;"
+         aria-hidden="true">
+      <defs>
+        <!-- Strong: hero cards, featured callouts (scale 66) -->
+        <filter id="glass-distortion-strong" x="-10%" y="-10%" width="120%" height="120%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.017 0.017"
+                        numOctaves="2" seed="92" result="noise" />
+          <feGaussianBlur in="noise" stdDeviation="2" result="blurred" />
+          <feDisplacementMap in="SourceGraphic" in2="blurred"
+                             scale="66" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <!-- Subtle: content cards, stat cards (scale 32) — DEFAULT -->
+        <filter id="glass-distortion" x="-5%" y="-5%" width="110%" height="110%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.014 0.014"
+                        numOctaves="2" seed="92" result="noise" />
+          <feGaussianBlur in="noise" stdDeviation="2" result="blurred" />
+          <feDisplacementMap in="SourceGraphic" in2="blurred"
+                             scale="32" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <!-- Light: UI chrome, buttons (scale 16) -->
+        <filter id="glass-distortion-light" x="-2%" y="-2%" width="104%" height="104%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012 0.012"
+                        numOctaves="1" seed="42" result="noise" />
+          <feGaussianBlur in="noise" stdDeviation="1.5" result="blurred" />
+          <feDisplacementMap in="SourceGraphic" in2="blurred"
+                             scale="16" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+    </svg>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

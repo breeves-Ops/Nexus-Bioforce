@@ -1,0 +1,326 @@
+.methane-tracker-page {
+  position: relative;
+  z-index: 2;
+}
+.mt-hero {
+  padding-bottom: 2.5rem;
+}
+.mt-hero-copy {
+  max-width: 720px;
+  margin-top: 1.25rem;
+  color: var(--text-sub);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.mt-hero-copy a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mt-back-link {
+  display: inline-block;
+  margin-top: 1.75rem;
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--text-sub);
+  border-bottom: 1px solid var(--border-w);
+  padding-bottom: 2px;
+}
+.mt-back-link:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.mt-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border-w);
+  border: 1px solid var(--border-w);
+  margin-bottom: 2.5rem;
+}
+.mt-stat-card {
+  background: var(--bg-card);
+  padding: 1.5rem;
+}
+.mt-stat-value {
+  font-family: var(--f-head);
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  color: var(--white);
+  line-height: 1;
+}
+.mt-stat-label {
+  margin-top: 0.6rem;
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.mt-stat-sub {
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.mt-live-indicator {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-alt);
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  color: var(--text-sub);
+}
+.mt-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+  animation: mt-pulse 2s ease-in-out infinite;
+}
+.mt-live-dot--error {
+  background: #dc4a1a;
+  box-shadow: 0 0 8px #dc4a1a;
+  animation: none;
+}
+@keyframes mt-pulse {
+  0%,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.mt-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 1.5rem;
+  align-items: start;
+}
+.mt-map-panel {
+  border: 1px solid var(--border-w);
+  background: var(--bg-alt);
+}
+.methane-map {
+  width: 100%;
+  height: 640px;
+  background: #0a0a0a;
+}
+.leaflet-container {
+  font-family: var(--f-body);
+}
+.mt-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  border-top: 1px solid var(--border-w);
+  font-size: 0.75rem;
+  color: var(--text-sub);
+}
+.mt-legend-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  flex-wrap: wrap;
+}
+.mt-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-right: 1em;
+}
+.mt-legend-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.mt-legend-swatch {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #c8a84b;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin-left: 0.4em;
+}
+.mt-legend-swatch--dim {
+  opacity: 0.4;
+}
+.mt-sidebar {
+  border: 1px solid var(--border-w);
+  background: var(--bg-alt);
+  display: flex;
+  flex-direction: column;
+  max-height: 640px;
+}
+.mt-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--border-w);
+}
+.mt-sidebar-header h3 {
+  font-family: var(--f-head);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.mt-refresh-btn {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  color: var(--gold);
+  border: 1px solid var(--border);
+  padding: 0.35em 0.8em;
+}
+.mt-refresh-btn:hover:not(:disabled) {
+  background: var(--gold-08);
+}
+.mt-refresh-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.mt-list {
+  overflow-y: auto;
+}
+.mt-list-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7em;
+  width: 100%;
+  text-align: left;
+  padding: 0.85rem 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.mt-list-row:hover,
+.mt-list-row--active {
+  background: var(--gold-04);
+}
+.mt-list-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 0.35em;
+  flex-shrink: 0;
+}
+.mt-list-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  min-width: 0;
+}
+.mt-list-title {
+  font-size: 0.88rem;
+  color: var(--text);
+}
+.mt-list-title em {
+  color: var(--text-muted);
+  font-style: normal;
+}
+.mt-list-meta {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+.mt-list-empty {
+  padding: 2rem 1.2rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+.mt-list-empty--error {
+  color: #dc4a1a;
+}
+.mt-attribution {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-w);
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+.mt-attribution a {
+  color: var(--gold);
+}
+.mt-attribution code {
+  font-family: var(--f-mono);
+  color: var(--text-sub);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #141414;
+  color: var(--text);
+}
+.mm-popup {
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+.mm-popup strong {
+  display: block;
+  margin-bottom: 0.3em;
+  color: var(--white);
+}
+.mm-popup-row {
+  color: var(--text-sub);
+}
+.mm-popup-link {
+  display: inline-block;
+  margin-top: 0.4em;
+  color: var(--gold);
+}
+.mm-status {
+  text-transform: capitalize;
+}
+.mm-status--active {
+  color: #4ade80;
+}
+.mm-status--closed,
+.mm-status--post-closure {
+  color: var(--text-muted);
+}
+@media (max-width: 980px) {
+  .mt-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mt-grid {
+    grid-template-columns: 1fr;
+  }
+  .methane-map {
+    height: 420px;
+  }
+  .mt-sidebar {
+    max-height: 420px;
+  }
+}
+.nexus-dark-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.82) contrast(0.92)
+    saturate(0.35);
+}
+.mt-spotlight-map {
+  margin-top: 1.5rem;
+}
+.mt-spotlight .methane-map {
+  height: 440px;
+}
+.mt-spotlight-map-placeholder {
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+@media (max-width: 680px) {
+  .mt-spotlight .methane-map,
+  .mt-spotlight-map-placeholder {
+    height: 340px;
+  }
+}

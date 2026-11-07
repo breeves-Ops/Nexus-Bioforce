@@ -1,0 +1,76 @@
+{
+  "_name": "Ocean Depth",
+  "backgroundStyle": "Linear Gradient",
+  "backgroundColor1": "#000a14",
+  "backgroundColor2": "#000000",
+  "backgroundAngle": 180,
+  "flow": {
+    "speed": 1.2,
+    "curlIntensity": 1.5,
+    "windDirection": "Down",
+    "windStrength": 0.8
+  },
+  "interaction": {
+    "magneticsEnabled": false,
+    "radius": 0.3,
+    "force": 1.2,
+    "parallax": 0.02,
+    "invertMouse": false
+  },
+  "transform": {
+    "shape": "Plane",
+    "fitMode": "Maintain Aspect",
+    "morphHD": 0.85,
+    "displacement": 0.3,
+    "pullForce": 0.4
+  },
+  "ambientCloud": {
+    "enabled": true,
+    "particleCount": 1000,
+    "size": 40,
+    "opacity": 0.18,
+    "colorSource": "Ice Blue",
+    "direction": "Down",
+    "speed": 0.3,
+    "bokehHardness": 0.05
+  },
+  "lighting": {
+    "ambient": 0.6,
+    "intensity": 1.2,
+    "dirX": 0,
+    "dirY": -1,
+    "dirZ": 1,
+    "depthShadow": 0.8
+  },
+  "rendering": {
+    "particleCountPreset": "65K (256x256)",
+    "particleSize": 3.5,
+    "brightness": 1,
+    "opacity": 0.9,
+    "respawnRate": 0.001,
+    "blending": 1
+  },
+  "post": {
+    "bloomEnabled": false,
+    "bloomIntensity": 0.3,
+    "bloomThreshold": 0.4,
+    "bloomRadius": 0.3,
+    "enableDof": false,
+    "dofAutoFocus": true,
+    "dofFocusBias": 1.5,
+    "enableChromatic": false,
+    "enableHueSat": false
+  },
+  "camera": {
+    "fov": 70,
+    "posX": 0,
+    "posY": 0,
+    "posZ": 3,
+    "targetX": 0,
+    "targetY": 0,
+    "targetZ": 0,
+    "enableOrbit": true,
+    "autoDrift": false,
+    "driftSpeed": 0.5
+  }
+}
