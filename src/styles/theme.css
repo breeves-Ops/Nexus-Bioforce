@@ -591,3 +591,62 @@ li {
     max-width: 360px;
   }
 }
+
+/* ── Social links (SocialLinks.jsx) ── */
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+}
+.social-link {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.2em 0;
+  transition: color 0.2s;
+}
+.social-link:hover,
+.social-link:focus-visible {
+  color: var(--gold);
+}
+.social-link-arrow {
+  font-size: 0.85em;
+  opacity: 0.55;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.social-link:hover .social-link-arrow {
+  opacity: 1;
+  transform: translate(1px, -1px);
+}
+.nav-social {
+  border-top: 1px solid var(--border);
+  padding: 1.4rem 0 1.6rem;
+}
+.nav-social .social-links {
+  margin-top: 0.2rem;
+}
+.footer-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.9rem;
+}
+.social-links--footer .social-link {
+  color: var(--text-muted);
+}
+.social-links--footer .social-link:hover {
+  color: var(--gold);
+}
+@media (max-width: 680px) {
+  .footer-end {
+    align-items: flex-start;
+  }
+}

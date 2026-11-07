@@ -1,4 +1,5 @@
 import { CONTACT_INFO } from '../utils/contact'
+import SocialLinks from './SocialLinks'
 
 export default function ContactOverlay({ isOpen, onClose }) {
   if (isOpen) {
@@ -62,6 +63,10 @@ export default function ContactOverlay({ isOpen, onClose }) {
                 <br />
                 {CONTACT_INFO.addressLines[1]}
               </div>
+            </div>
+            <div className="co-field">
+              <div className="co-field-label">Follow</div>
+              <SocialLinks />
             </div>
           </div>
           <div className="co-divider" />

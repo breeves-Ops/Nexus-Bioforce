@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CONTACT_INFO, buildInquiryMailto } from '../utils/contact'
+import SocialLinks from './SocialLinks'
 
 function useReveal(n = 0.1) {
   const e = useRef(null)
@@ -107,6 +108,10 @@ export default function ContactSection() {
                 <a href={CONTACT_INFO.phoneHref} className="contact-detail-value">
                   {CONTACT_INFO.phoneDisplay}
                 </a>
+              </div>
+              <div className="contact-detail">
+                <div className="contact-detail-label">Follow</div>
+                <SocialLinks />
               </div>
               <div className="contact-detail">
                 <div className="contact-detail-label">Facility</div>
@@ -309,10 +314,13 @@ export default function ContactSection() {
               Methane Tracker
             </Link>
           </div>
-          <div className="footer-copy">
-            {'© '}
-            {new Date().getFullYear()}
-            {' Nexus Bioforce — Project Aethelred — Houston, Texas'}
+          <div className="footer-end">
+            <SocialLinks className="social-links--footer" />
+            <div className="footer-copy">
+              {'© '}
+              {new Date().getFullYear()}
+              {' Nexus Bioforce — Project Aethelred — Houston, Texas'}
+            </div>
           </div>
         </div>
       </div>

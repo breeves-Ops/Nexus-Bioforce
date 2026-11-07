@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import SocialLinks from './SocialLinks'
 
 const REVOLUTION_LINKS = [
   {
@@ -112,6 +113,10 @@ export default function MenuDrawer({ onContactOpen }) {
               <span className="nav-live-dot" aria-hidden="true" />
               Houston Methane Tracker
             </Link>
+          </div>
+          <div className="nav-social">
+            <div className="nav-col-label">Follow Nexus</div>
+            <SocialLinks onNavigate={() => t(false)} />
           </div>
           <div className="nav-footer">
             <button
