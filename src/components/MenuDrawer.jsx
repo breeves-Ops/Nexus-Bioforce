@@ -16,7 +16,7 @@ const REVOLUTION_LINKS = [
   },
   {
     id: 'the-site',
-    label: 'Project Aethelred',
+    label: 'Facility Zero',
   },
   {
     id: 'the-technology',
@@ -103,7 +103,11 @@ export default function MenuDrawer({ onContactOpen }) {
             </div>
           </div>
           <div className="nav-live">
-            <div className="nav-col-label">Live Data</div>
+            <div className="nav-col-label">The Network</div>
+            <Link className="nav-link nav-link--live" to="/houston-programs" onClick={() => t(false)}>
+              Houston Programs
+            </Link>
+            <div className="nav-col-label nav-col-label--spaced">Live Data</div>
             <Link
               className="nav-link nav-link--live"
               to="/methane-tracker"

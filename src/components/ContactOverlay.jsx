@@ -76,7 +76,7 @@ export default function ContactOverlay({ isOpen, onClose }) {
                 lineHeight: 1.6,
               }}
             >
-              PROJECT AETHELRED
+              FACILITY ZERO
               <br />
               NEXUSBIOFORCE.COM
             </div>

@@ -517,7 +517,7 @@ export default function Declaration() {
             PART II / THE SITE · 18511 BEAUMONT HWY
           </div>
           <h2 className="nd2-heading" style={headingStyle}>
-            Project Aethelred
+            Facility Zero
           </h2>
           <p
             style={{
@@ -528,7 +528,7 @@ export default function Declaration() {
               marginBottom: '0.5rem',
             }}
           >
-            50-Acre Brownfield · Houston, Texas · San Jacinto River and Rail Park
+            Nexus Bioforce Resource Refinery · 50-Acre Brownfield · Houston, Texas
           </p>
           <div className="nd2-divider" style={dividerStyle} />
           <p style={bodyStyle}>
@@ -551,7 +551,7 @@ export default function Declaration() {
               San Jacinto River Waste Pits Superfund site
             </strong>
             {
-              ' — EPA-listed 2008, contaminated by dioxin from 1960s paper mill waste. Final 100% Remedial Design for the Northern Impoundment approved September 2025. Project Aethelred proposes to convert this liability into an asset: FJH at 3,000 K thermally destroys dioxins while recovering carbon, minerals, and energy from the remediated material.'
+              ' — EPA-listed 2008, contaminated by dioxin from 1960s paper mill waste. Final 100% Remedial Design for the Northern Impoundment approved September 2025. Facility Zero proposes to convert this liability into an asset: FJH at 3,000 K thermally destroys dioxins while recovering carbon, minerals, and energy from the remediated material.'
             }
           </p>
           <div
@@ -599,7 +599,7 @@ export default function Declaration() {
           </h2>
           <div className="nd2-divider" style={dividerStyle} />
           <p style={bodyStyle}>
-            {'At the core of Project Aethelred is the '}
+            {'At the core of Facility Zero is the '}
             <strong
               style={{
                 color: '#00e5c8',
@@ -836,7 +836,7 @@ export default function Declaration() {
             AWS has committed to 100% renewable energy (achieved 2023, seven years ahead of target),
             net-zero carbon by 2040, and water-positive by 2030. These commitments are incompatible
             with the current hyperscale siting model, under which $64B in projects were blocked
-            between May 2024–March 2025. Project Aethelred resolves the crisis.
+            between May 2024–March 2025. Facility Zero resolves the crisis.
           </p>
           <div
             className="nd2-grid"
@@ -877,7 +877,7 @@ export default function Declaration() {
             }}
           >
             {
-              '"AWS-Aethelred is the only hyperscale configuration that allows enterprise customers to say, truthfully and verifiably, that their data is processed by infrastructure that removes more carbon from the atmosphere than it emits — and generates its own water from air."'
+              '"AWS–Facility Zero is the only hyperscale configuration that allows enterprise customers to say, truthfully and verifiably, that their data is processed by infrastructure that removes more carbon from the atmosphere than it emits — and generates its own water from air."'
             }
           </blockquote>
           <p
@@ -890,7 +890,7 @@ export default function Declaration() {
           >
             Microsoft Azure pursues Direct Air Capture at $600–$1,000/tonne. Google Cloud's 24/7
             carbon-free energy operates in only three regions. Neither is water-positive. Neither is
-            carbon-negative. AWS-Aethelred is both.
+            carbon-negative. AWS–Facility Zero is both.
           </p>
         </div>
       </section>

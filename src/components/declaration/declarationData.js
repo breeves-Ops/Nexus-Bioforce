@@ -15,7 +15,7 @@ export const HOUSTON_HISTORY = [
     era: 'TURNER ADMINISTRATION',
     year: '2016–2024',
     title: 'The Lost Decade',
-    text: 'Turner canceled the One Bin procurement and contracted FCC Environmental for single-stream recycling. Meanwhile, Rice University advanced FJH from TRL 4 to TRL 5 (Nature 577, 647–651, 2020) establishing the scientific basis for Project Aethelred.',
+    text: 'Turner canceled the One Bin procurement and contracted FCC Environmental for single-stream recycling. Meanwhile, Rice University advanced FJH from TRL 4 to TRL 5 (Nature 577, 647–651, 2020) establishing the scientific basis for Facility Zero.',
   },
   {
     era: 'WHITMIRE ADMINISTRATION',
@@ -193,7 +193,7 @@ export const CAMPUS_ZONES = [
   },
   {
     dir: 'WEST',
-    name: 'Amazon-Aethelred',
+    name: 'Amazon–Facility Zero',
     desc: '17.9 MWe carbon-negative power delivery bays for AWS co-located AI training and inference. Off-grid. Water-positive. Carbon-negative.',
   },
 ]
@@ -275,7 +275,7 @@ export const VISION_PILLARS = [
 export const STATE_INITIATIVES = [
   'Critical Materials Strategy: establishing domestic FJH-based production of graphene, REEs, and critical minerals from MSW as a state strategic priority.',
   "Bio-Economy Currency Act: extending SB21's legal framework to include CCTs, BIOs, and RWA-Tokens as recognized digital commodities eligible for the Texas Strategic Reserve.",
-  'Circular Economy Enterprise Zone: designating the San Jacinto River and Rail Park and equivalent sites with enhanced incentives and expedited permitting.',
+  'Circular Economy Enterprise Zone: designating Facility Zero and equivalent sites with enhanced incentives and expedited permitting.',
   'Data Center Sovereignty Act: establishing off-grid, carbon-negative data center infrastructure as preferred — complementing SB 6 (signed June 20, 2025) requiring $100K minimum transmission screening for new loads ≥75 MW.',
   'Atmospheric Water Generation Mandate: requiring all new data centers above 50 MW to incorporate atmospheric water generation as a condition of permitting.',
 ]

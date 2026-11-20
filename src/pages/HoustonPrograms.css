@@ -1,0 +1,186 @@
+.houston-programs-page {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero */
+.hp-hero {
+  padding-bottom: 3rem;
+}
+.hp-hero-copy {
+  max-width: 760px;
+  margin-top: 1.25rem;
+  color: var(--text-sub);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.hp-loops {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+}
+.hp-loops li {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--border);
+  background: var(--gold-04);
+  padding: 0.45em 0.9em;
+  border-radius: 999px;
+}
+.hp-back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--text-sub);
+  border-bottom: 1px solid var(--border-w);
+  padding-bottom: 2px;
+}
+.hp-back-link:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+/* Program cards */
+.hp-body {
+  padding-top: 4rem;
+}
+.hp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border-w);
+  border: 1px solid var(--border-w);
+}
+.hp-card {
+  background: rgba(10, 14, 16, 0.86);
+  padding: 2rem 1.75rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.25s;
+}
+.hp-card:hover {
+  background: rgba(14, 22, 24, 0.92);
+}
+.hp-card--flagship {
+  box-shadow: inset 0 2px 0 var(--gold);
+}
+.hp-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+.hp-card-index {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+.hp-card-tag {
+  font-family: var(--f-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--gold);
+  padding: 0.35em 0.75em;
+  border-radius: 999px;
+}
+.hp-card-name {
+  font-size: clamp(1.4rem, 1.9vw, 1.75rem);
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.1;
+}
+.hp-card-subtitle {
+  margin-top: 0.45rem;
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.hp-card-desc {
+  margin-top: 1.1rem;
+  color: var(--text-sub);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  flex: 1;
+}
+.hp-card-focus {
+  margin-top: 1.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--border-w);
+}
+.hp-card-focus-label {
+  font-family: var(--f-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.45rem;
+}
+.hp-card-focus p {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* Join */
+.hp-join-inner {
+  max-width: 900px;
+}
+.hp-join-heading {
+  font-size: clamp(1.9rem, 3.4vw, 3.2rem);
+}
+.hp-join-copy {
+  margin-top: 1.25rem;
+  color: var(--text-sub);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+.hp-join-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.75rem;
+}
+.hp-join-contact {
+  font-family: var(--f-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--text-sub);
+  border-bottom: 1px solid var(--border-w);
+  padding-bottom: 2px;
+}
+.hp-join-contact:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+@media (max-width: 1100px) {
+  .hp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 680px) {
+  .hp-grid {
+    grid-template-columns: 1fr;
+  }
+  .hp-card {
+    padding: 1.6rem 1.25rem 1.8rem;
+  }
+  .hp-hero-copy {
+    font-size: 1rem;
+  }
+}

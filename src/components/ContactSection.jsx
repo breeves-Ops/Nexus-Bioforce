@@ -133,7 +133,7 @@ export default function ContactSection() {
                     lineHeight: 1.7,
                   }}
                 >
-                  PROJECT AETHELRED
+                  FACILITY ZERO
                   <br />
                   NEXUSBIOFORCE.COM
                 </div>
@@ -312,7 +312,7 @@ export default function ContactSection() {
           <div className="footer-copy">
             {'© '}
             {new Date().getFullYear()}
-            {' Nexus Bioforce — Project Aethelred — Houston, Texas'}
+            {' Nexus Bioforce — Facility Zero — Houston, Texas'}
           </div>
         </div>
       </div>

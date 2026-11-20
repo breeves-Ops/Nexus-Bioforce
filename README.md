@@ -26,6 +26,7 @@ and `api/methane-plumes.js` runs as a serverless function.
 | `src/components/ContactSection.jsx`, `ContactOverlay.jsx`, `src/utils/contact.js` | Contact form (opens the visitor's email app), email, phone and address |
 | `src/components/MenuDrawer.jsx`, `StickyLogo.jsx`, `Ticker.jsx` | Navigation, logo and the scrolling ticker |
 | `src/pages/MethaneTrackerPage.jsx`, `src/components/MethaneSpotlight.jsx`, `src/components/methane/` | Methane tracker page, homepage spotlight, map and stat cards |
+| `src/pages/HoustonProgramsPage.jsx`, `HoustonPrograms.css`, `src/data/houstonPrograms.js` | Houston Programs page (`/houston-programs`): one card per program site, with the flagship Facility Zero — Nexus Bioforce Resource Refinery first. Edit the wording in `houstonPrograms.js` |
 | `src/data/houstonLandfills.js` | Houston-area landfill sites shown on the map |
 | `api/methane-plumes.js` | Serverless function: pulls CH₄ plume detections for Greater Houston from Carbon Mapper's public catalog (no API key) |
 | `src/components/particles/` | WebGL particle background |

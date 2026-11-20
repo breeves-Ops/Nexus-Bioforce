@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const HERO_TAGS = [
-  'Project Aethelred',
+  'Facility Zero',
   'Amazon Alliance',
   'State of Texas',
   'Bio-Token Economy',

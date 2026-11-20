@@ -18,7 +18,7 @@ export default function VideoWalkthrough() {
         <div className="nexus-video-grid">
           <div className="nexus-video-copy">
             <div className="nd2-eyebrow" style={eyebrowStyle}>
-              WATCH · PROJECT AETHELRED
+              WATCH · FACILITY ZERO
             </div>
             <h2 className="nd2-heading" style={headingStyle}>
               Inside the
@@ -27,7 +27,7 @@ export default function VideoWalkthrough() {
             </h2>
             <div className="nd2-divider" style={dividerStyle} />
             <p style={bodyStyle}>
-              A walkthrough of Project Aethelred at 18511 Beaumont Hwy — the site plan, the material
+              A walkthrough of Facility Zero at 18511 Beaumont Hwy — the site plan, the material
               recovery line, and the energy systems that turn Houston's waste stream into feedstock
               and power.
             </p>
@@ -39,7 +39,7 @@ export default function VideoWalkthrough() {
               playsInline={true}
               preload="none"
               poster={WALKTHROUGH_POSTER_SRC}
-              aria-label="Project Aethelred video walkthrough"
+              aria-label="Facility Zero video walkthrough"
             >
               <source src={WALKTHROUGH_VIDEO_SRC} type="video/mp4" />
               Your browser can't play this video.{' '}

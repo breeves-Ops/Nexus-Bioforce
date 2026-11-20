@@ -17,6 +17,7 @@ import { createDefaultParticleParams } from './studio/ParticleWorkshop'
 import { logger } from './utils/logger'
 
 const MethaneTrackerPage = lazy(() => import('./pages/MethaneTrackerPage.jsx'))
+const HoustonProgramsPage = lazy(() => import('./pages/HoustonProgramsPage.jsx'))
 
 const APP_TAG = 'App'
 
@@ -173,6 +174,14 @@ export default function App() {
               element={
                 <Suspense fallback={null}>
                   <MethaneTrackerPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/houston-programs"
+              element={
+                <Suspense fallback={null}>
+                  <HoustonProgramsPage onContactOpen={x} />
                 </Suspense>
               }
             />

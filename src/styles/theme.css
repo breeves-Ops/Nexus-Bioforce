@@ -500,6 +500,9 @@ li {
   flex-direction: column;
   gap: 0.4rem;
 }
+.nav-col-label--spaced {
+  margin-top: 1.1rem;
+}
 .nav-link--live {
   display: inline-flex;
   align-items: center;
