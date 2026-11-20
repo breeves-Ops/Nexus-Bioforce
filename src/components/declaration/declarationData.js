@@ -401,7 +401,7 @@ export const CAPEX_BREAKDOWN = [
     pct: '16.1%',
   },
   {
-    cat: 'San Jacinto Intake & Integration',
+    cat: 'Facility Zero Intake & Integration',
     cost: '$70M',
     pct: '6.1%',
   },
